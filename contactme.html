@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
+</head>
+<body>
+    <nav>
+        <a href="homepage.html">
+            <img src="images/mbweblogo.png" alt="MB Web Logo" class="logo">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certs.html">Certs</a></li>
+            <li><a href="contactme.html">Contact</a></li>
+            <li><a href="resume.html">My Resume</a></li>
+        </ul>
+    </nav>
+    
+    <section class="contact-container">
+        <h1>Contact Me!</h1>
+        <p>Feel free to reach out through any of the platforms below.</p>
+
+        <div class="contact-icons">
+            <a href="https://linkedin.com/in/michael-bush-a92aa5351" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/michqelbush" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="mailto:michqelbush@gmail.com">
+                <img src="images/email-icon-png-white-24.png" alt="Email">
+            </a>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("nav-menu");
+            const toggle = document.querySelector(".menu-toggle");
+            menu.classList.toggle("show");      
+            toggle.classList.toggle("active");
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll("nav ul li a");
+            const currentPage = window.location.pathname.split("/").pop();
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === currentPage || (currentPage === "" && link.getAttribute("href") === "homepage.html")) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
