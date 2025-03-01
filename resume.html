@@ -57,10 +57,8 @@
             let scrollTop = window.scrollY;
 
             if (scrollTop > lastScrollTop && scrollTop > 50) {
-        // Scrolling down, hide navbar
-                navbar.style.top = "-60px"; // Adjust based on navbar height
+                navbar.style.top = "-60px"; 
             } else {
-        // Scrolling up, show navbar
                 navbar.style.top = "0";
             }
             lastScrollTop = scrollTop;
