@@ -193,6 +193,23 @@ li a.active:hover {
     color: lightgray;
 }
 
+.in-progress {
+    color: orange;
+    font-weight: bold;
+}
+
+.coming-soon {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+    margin-top: 20px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
 
 /* Hamburger Menu */
 .menu-toggle {
