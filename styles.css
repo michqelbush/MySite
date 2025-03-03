@@ -212,7 +212,6 @@ li a.active:hover {
 
 .coming-soon .cert-image img {
     width: 120px;
-    animation: blink 1s infinite;
 }
 
 /* Ensures all certification titles take up the same amount of space */
