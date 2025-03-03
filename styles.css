@@ -170,8 +170,8 @@ li a.active:hover {
 }
 
 .cert-item {
-    flex: 1 1 calc(50% - 20px); /* 33% width with 20px spacing */
-    max-width: 250px;
+    flex: 1 1 calc(33.33% - 20px); /* 33% width with 20px spacing */
+    max-width: 200px;
     box-sizing: border-box;
     background: rgb(51, 51, 51);
     padding: 15px;
