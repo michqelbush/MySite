@@ -219,6 +219,7 @@ li a.active:hover {
 
 /* Reduces space between title and text */
 .cert-item p {
+    margin-top: -2;
     font-size: 14px;
     color: lightgray;
 }
