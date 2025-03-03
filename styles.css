@@ -175,17 +175,27 @@ li a.active:hover {
     width: 250px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Keeps images the same size */
 .cert-item img {
     max-width: 50%;
     height: auto;
     border-radius: 5px;
 }
 
+/* Ensures all titles (h3) have equal height */
 .cert-item h3 {
+    min-height: 50px; /* Adjust this value based on the tallest title */
     margin: 10px 0 5px;
     color: rgb(56, 150, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .cert-item p {
@@ -206,6 +216,7 @@ li a.active:hover {
     margin-top: 20px;
     animation: blink 1.5s infinite;
 }
+
 
 @keyframes blink {
     50% { opacity: 0.5; }
