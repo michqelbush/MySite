@@ -236,9 +236,15 @@ li a.active:hover {
     font-weight: bold;
 }
 
-@media (max-width: 600px){
+@media (max-width: 820px) {
     .cert-item {
-        flex-basis: 100%;
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .cert-item {
+        flex-basis: 100%; 
     }
 }
 
