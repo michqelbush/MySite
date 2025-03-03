@@ -158,6 +158,20 @@ li a.active:hover {
     text-align: center;
     padding: 80px 20px;
     color: white;
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly lower */
+    animation: fadeUp .8s ease-out forwards; /* Animation runs once */
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .cert-list {
