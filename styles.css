@@ -201,8 +201,8 @@ li a.active:hover {
 .comptia-cert h3 {
     margin-bottom: -2px; 
 }
-.comptia-certp{
-    margin-top: -1px;
+.comptia-cert p{
+    margin-top: -3px;
 }
 
 
@@ -219,7 +219,6 @@ li a.active:hover {
 
 /* Reduces space between title and text */
 .cert-item p {
-    margin-top: -2;
     font-size: 14px;
     color: lightgray;
 }
