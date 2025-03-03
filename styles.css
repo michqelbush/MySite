@@ -195,6 +195,7 @@ li a.active:hover {
 
 .comptia-cert .cert-image img {
     width: 130px;
+    margin-bottom: 10px;
 }
 
 /* Add spacing below the h3 only for CompTIA certs */
