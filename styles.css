@@ -237,7 +237,7 @@ li a.active:hover {
 
 @media (max-width: 1024px){
     .cert-item {
-        flex: 1 1 calc(50% - 20px); /* 50% width with 20px spacing */
+        flex-basis: calc(50% - 20px); /* 50% width with 20px spacing */
     }
 }
 
