@@ -161,14 +161,16 @@ li a.active:hover {
 }
 
 .cert-list {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flec;
+    flex-wrap: wrap;
     gap: 20px;
-    margin-top: 10px;
     justify-content: center;
 }
 
 .cert-item {
+    flex: 11 calc(33% - 20px); /* 33% width with 20px spacing */
+    max-width: 250px;
+    box-sizing: border-box;
     background: rgb(51, 51, 51);
     padding: 15px;
     border-radius: 10px;
