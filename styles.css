@@ -187,6 +187,7 @@ li a.active:hover {
     border-radius: 5px;
 }
 
+/* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
     min-height: 50px; /* Adjust this value based on the tallest title */
     margin: 10px 0 5px;
@@ -195,6 +196,25 @@ li a.active:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* Adjusts spacing for specific certificate types */
+.google-cert img {
+    margin-bottom: 10px;
+}
+
+.comptia-cert img {
+    margin-bottom: 20px; /* Adds more space for better alignment */
+}
+
+/* Ensures equal spacing for titles in CompTIA certs */
+.comptia-cert h3 {
+    min-height: 50px;
+}
+
+/* Reduces space between title and text */
+.comptia-cert p {
+    margin-top: 5px;
 }
 
 .cert-item p {
@@ -212,7 +232,7 @@ li a.active:hover {
     font-weight: bold;
     color: orange;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 10px; /* Reduced space between the heading and text */
     animation: blink 1.5s infinite;
 }
 
