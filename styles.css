@@ -171,6 +171,7 @@ li a.active:hover {
 
 .cert-item {
     width: calc (50% -20px);
+    max-width: 400px;
     background: rgb(51, 51, 51);
     padding: 15px;
     border-radius: 10px;
