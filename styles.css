@@ -208,6 +208,11 @@ li a.active:hover {
     margin-top: -3px;
 }
 
+.coming-soon .cert-image img {
+    width: 120px;
+    animation: blink 1s infinite;
+}
+
 /* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
     min-height: 50px;
