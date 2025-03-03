@@ -115,27 +115,7 @@ li a.active:hover {
     }
 }
 
-.contact-container {
-    max-width: 600px;
-    margin: 80px auto 20px;
-    padding: 100px;
-    text-align: center;
-    color: white;
-    opacity: 0; /* Start hidden */
-    transform: translateY(30px); /* Start slightly lower */
-    animation: fadeUp 1s ease-out forwards; /* Animation runs once */
-}
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .contact-icons {
     display: flex;
