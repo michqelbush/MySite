@@ -180,16 +180,26 @@ li a.active:hover {
     align-items: center;
 }
 
-/* Keeps images the same size */
-.cert-item img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 5px;
+/* Image container for flexible sizing */
+.cert-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Different image sizes per certification type */
+.google-cert .cert-image img {
+    width: 120px;
+}
+
+.comptia-cert .cert-image img {
+    width: 100px;
 }
 
 /* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
-    min-height: 50px; /* Adjust this value based on the tallest title */
+    min-height: 50px;
     margin: 10px 0 5px;
     color: rgb(56, 150, 250);
     display: flex;
@@ -198,25 +208,7 @@ li a.active:hover {
     text-align: center;
 }
 
-/* Adjusts spacing for specific certificate types */
-.google-cert img {
-    margin-bottom: 10px;
-}
-
-.comptia-cert img {
-    margin-bottom: 25px; /* Adds more space for better alignment */
-}
-
-/* Ensures equal spacing for titles in CompTIA certs */
-.comptia-cert h3 {
-    min-height: 50px;
-}
-
 /* Reduces space between title and text */
-.comptia-cert p {
-    margin-top: 5px;
-}
-
 .cert-item p {
     font-size: 14px;
     color: lightgray;
@@ -232,7 +224,7 @@ li a.active:hover {
     font-weight: bold;
     color: orange;
     text-transform: uppercase;
-    margin-top: 10px; /* Reduced space between the heading and text */
+    margin-top: 10px;
     animation: blink 1.5s infinite;
 }
 
