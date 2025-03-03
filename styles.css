@@ -184,7 +184,7 @@ li a.active:hover {
     align-items: center;
     opacity: 0;
     transform: scaleX(0);
-    animation: expandIn 1s ease-in-out forwards;
+    animation: growIn .6s ease-out forwards;
 }
 
 /* Image container for flexible sizing */
@@ -252,14 +252,14 @@ li a.active:hover {
     }
 }
 
-@keyframes expandIn {
+@keyframes growIn {
     from {
         opacity: 0;
-        transform: scaleX(0);
+        transform: scale(0.5);
     }
     to {
         opacity: 1;
-        transform: scaleX(1);
+        transform: scale(1);
     }
 }
 
