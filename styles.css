@@ -203,12 +203,12 @@ li a.active:hover {
 }
 
 .cert-item h3 {
-    margin-bottom: 5px; /* Reduce the bottom margin */
+    margin-bottom: 2px; /* Reduce the bottom margin */
     min-height: auto;  /* Remove fixed height to prevent extra space */
 }
 
 .cert-item p {
-    margin-top: 0; /* Remove any default top margin */
+    margin-top: -2px; /* Remove any default top margin */
     font-size: 14px;
     color: lightgray;
 }
