@@ -235,6 +235,18 @@ li a.active:hover {
     50% { opacity: 0.5; }
 }
 
+@media (max-width: 1024px){
+    .cert-item {
+        flex: 1 1 calc(50% - 20px); /* 50% width with 20px spacing */
+    }
+}
+
+@media (max-width: 600px){
+    .cert-item {
+        flex: 1 1 100%;
+    }
+}
+
 /* Hamburger Menu */
 .menu-toggle {
     display: none; /* Hide on large screens */
