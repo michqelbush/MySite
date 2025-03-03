@@ -204,7 +204,7 @@ li a.active:hover {
 }
 
 .comptia-cert img {
-    margin-bottom: 20px; /* Adds more space for better alignment */
+    margin-bottom: 25px; /* Adds more space for better alignment */
 }
 
 /* Ensures equal spacing for titles in CompTIA certs */
