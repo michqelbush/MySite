@@ -197,6 +197,12 @@ li a.active:hover {
     width: 130px;
 }
 
+/* Add spacing below the h3 only for CompTIA certs */
+.comptia-cert h3 {
+    margin-bottom: 15px; /* Adjust as needed */
+}
+
+
 /* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
     min-height: 50px;
