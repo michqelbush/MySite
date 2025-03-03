@@ -115,7 +115,27 @@ li a.active:hover {
     }
 }
 
+.contact-container {
+    max-width: 600px;
+    margin: 80px auto 20px;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly lower */
+    animation: fadeUp 1s ease-out forwards; /* Animation runs once */
+}
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .contact-icons {
     display: flex;
@@ -167,7 +187,6 @@ li a.active:hover {
     border-radius: 5px;
 }
 
-/* Ensures all titles (h3) have equal height */
 .cert-item h3 {
     min-height: 50px; /* Adjust this value based on the tallest title */
     margin: 10px 0 5px;
@@ -196,7 +215,6 @@ li a.active:hover {
     margin-top: 20px;
     animation: blink 1.5s infinite;
 }
-
 
 @keyframes blink {
     50% { opacity: 0.5; }
