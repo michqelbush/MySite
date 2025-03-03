@@ -183,8 +183,8 @@ li a.active:hover {
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    transform: scaleX(0);
-    animation: growIn .6s ease-out forwards;
+    transform: scaleX(0.5);
+    animation: growIn .3s ease-out forwards;
 }
 
 /* Image container for flexible sizing */
@@ -264,23 +264,23 @@ li a.active:hover {
 }
 
 .cert-item:nth-child(1) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .cert-item:nth-child(2) {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 
 .cert-item:nth-child(3) {
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 .cert-item:nth-child(4) {
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 
 .cert-item:nth-child(5) {
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 
 /* Hamburger Menu */
