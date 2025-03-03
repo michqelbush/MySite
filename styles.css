@@ -161,11 +161,11 @@ li a.active:hover {
 }
 
 .cert-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
     margin-top: 10px;
+    justify-content: center;
 }
 
 .cert-item {
