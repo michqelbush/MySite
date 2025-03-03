@@ -202,13 +202,20 @@ li a.active:hover {
     margin-bottom: 0px; 
 }
 
+
+/* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
-    margin-bottom: 2px; /* Reduce the bottom margin */
-    min-height: auto;  /* Remove fixed height to prevent extra space */
+    min-height: 50px;
+    margin: 10px 0 5px;
+    color: rgb(56, 150, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+/* Reduces space between title and text */
 .cert-item p {
-    margin-top: -2px; /* Remove any default top margin */
     font-size: 14px;
     color: lightgray;
 }
