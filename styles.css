@@ -245,6 +245,7 @@ li a.active:hover {
 @media (max-width: 600px) {
     .cert-item {
         flex-basis: 100%; 
+        max-width: 100%;
     }
 }
 
