@@ -104,6 +104,10 @@ li a.active:hover {
     border-radius: 8px;
 }
 
+.resume-container h2 {
+    margin-bottom: 20px;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
