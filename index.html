@@ -28,28 +28,35 @@
     </nav>
     <img src="" alt="ProfPic" class="pic">
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                const navLinks = document.querySelectorAll("nav ul li a");
+                let currentPage = window.location.pathname.split("/").pop().toLowerCase();
+    
+                if (!currentPage || currentPage === "index") {
+                    currentPage = "index.html";
+                } else if (!currentPage.includes(".")) {
+                    currentPage += ".html"; // Handles Netlify pretty URLs
+                }
+    
+                console.log("Current Page:", currentPage); // Debugging
+    
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").toLowerCase() === currentPage) {
+                        link.classList.add("active");
+                        console.log("Active class added to:", link.href, link.classList.contains("active"));
+                    }
+                });
+            }, 50);
+        });
+    
         function toggleMenu() {
             const menu = document.getElementById("nav-menu");
             const toggle = document.querySelector(".menu-toggle");
             menu.classList.toggle("show");
             toggle.classList.toggle("active");
         }
-    
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll("nav ul li a");
-            let currentPage = window.location.pathname.split("/").pop().toLowerCase();
-    
-            if (currentPage === "" || currentPage === "index") {
-                currentPage = "index.html";
-            }
-    
-            navLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (link.getAttribute("href").toLowerCase() === currentPage) {
-                    link.classList.add("active");
-                }
-            });
-        });
     
         let lastScrollTop = 0;
         const navbar = document.querySelector("nav");
@@ -64,9 +71,6 @@
             }
             lastScrollTop = scrollTop;
         });
-        console.log("Active Link:", currentPage);
-
-        console.log(link, link.classList.contains("active"));
-    </script>    
+    </script>       
 </body>
 </html>
