@@ -49,7 +49,7 @@ li a {
     display: inline-block;
     border: none;
     border-radius: 5px;
-    transition: color 0.3s ease, background 0.3s ease-in-out, opacity 0.3s ease, box-shadow 0.01s ease;
+    transition: color 0.5s ease-in-out, background 0.5s ease-in-out, opacity 0.3s ease, box-shadow 0.01s ease;
 }
 
 li a:hover {
@@ -66,6 +66,7 @@ li a:active {
 li a.active {
     color: rgb(56, 150, 250);
     font-weight: bold;
+    transition: color 0.5s ease-in-out;
 }
 
 li a.active:hover {
