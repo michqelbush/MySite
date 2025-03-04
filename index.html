@@ -31,19 +31,27 @@
         document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 const navLinks = document.querySelectorAll("nav ul li a");
-                let currentPage = window.location.pathname.split("/").pop().toLowerCase();
+                let currentPage = window.location.pathname.toLowerCase();
     
-                if (!currentPage || currentPage === "index") {
+                if (currentPage === "/" || currentPage === "/index.html") {
                     currentPage = "index.html";
                 } else if (!currentPage.includes(".")) {
-                    currentPage += ".html"; // Handles Netlify pretty URLs
+                    currentPage = currentPage.replace(/\/$/, "") + ".html"; // Handle clean URLs
                 }
     
                 console.log("Current Page:", currentPage); // Debugging
     
                 navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href").toLowerCase() === currentPage) {
+                    let linkHref = link.getAttribute("href").toLowerCase();
+    
+                    // Normalize href if it's using absolute paths
+                    if (linkHref === "/" || linkHref === "/index.html") {
+                        linkHref = "index.html";
+                    } else if (!linkHref.includes(".")) {
+                        linkHref = linkHref.replace(/\/$/, "") + ".html";
+                    }
+    
+                    if (currentPage === linkHref) {
                         link.classList.add("active");
                         console.log("Active class added to:", link.href, link.classList.contains("active"));
                     }
@@ -71,6 +79,6 @@
             }
             lastScrollTop = scrollTop;
         });
-    </script>       
+    </script>         
 </body>
 </html>
