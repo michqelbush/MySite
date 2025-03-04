@@ -371,7 +371,6 @@ li a.active:hover {
         transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s;
     }
     
-
     /* When menu is active, make it slide down */
     ul.show {
         opacity: 1;
@@ -387,5 +386,4 @@ li a.active:hover {
     li a {
         padding: 6px 15px; /* Reduce top/bottom padding inside links */
     }
-
 }
