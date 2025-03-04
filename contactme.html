@@ -44,23 +44,35 @@
         </div>
     </section>
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById("nav-menu");
-            const toggle = document.querySelector(".menu-toggle");
-            menu.classList.toggle("show");      
-            toggle.classList.toggle("active");
-        }
-        
         document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll("nav ul li a");
-            const currentPage = window.location.pathname.split("/").pop();
-
-            navLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (link.getAttribute("href") === currentPage || (currentPage === "" && link.getAttribute("href") === "index.html")) {
-                    link.classList.add("active");
+            setTimeout(() => {
+                const navLinks = document.querySelectorAll("nav ul li a");
+                let currentPage = window.location.pathname.toLowerCase();
+    
+                if (currentPage === "/" || currentPage === "/contactme.html") {
+                    currentPage = "contactme.html";
+                } else if (!currentPage.includes(".")) {
+                    currentPage = currentPage.replace(/\/$/, "") + ".html"; // Handle clean URLs
                 }
-            });
+    
+                console.log("Current Page:", currentPage); // Debugging
+    
+                navLinks.forEach((link) => {
+                    let linkHref = link.getAttribute("href").toLowerCase();
+    
+                    // Normalize href if it's using absolute paths
+                    if (linkHref === "/" || linkHref === "/contactme.html") {
+                        linkHref = "contactme.html";
+                    } else if (!linkHref.includes(".")) {
+                        linkHref = linkHref.replace(/\/$/, "") + ".html";
+                    }
+    
+                    if (currentPage === linkHref) {
+                        link.classList.add("active");
+                        console.log("Active class added to:", link.href, link.classList.contains("active"));
+                    }
+                });
+            }, 50);
         });
     </script>
 </body>
