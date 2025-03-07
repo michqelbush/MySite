@@ -81,10 +81,6 @@ li a:not(.active) {
     transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-li a.active:hover {
-    color: rgb(26, 130, 230);
-}
-
 .pic {
     max-height: 400px;
     padding: 80px 20px;
