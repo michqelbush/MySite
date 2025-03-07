@@ -18,13 +18,13 @@
             <div></div>
         </div>
         <ul id="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certs.html">Certs</a></li>
-            <li><a href="contactme.html">Contact</a></li>
-            <li><a href="resume.html">My Resume</a></li>
-        </ul>
+            <li><a href="index.html" data-text="Home">Home</a></li>
+            <li><a href="skills.html" data-text="Skills">Skills</a></li>
+            <li><a href="projects.html" data-text="Projects">Projects</a></li>
+            <li><a href="certs.html" data-text="Certs">Certs</a></li>
+            <li><a href="contactme.html" data-text="Contact">Contact</a></li>
+            <li><a href="resume.html" data-text="My Resume">My Resume</a></li>
+        </ul>        
     </nav>
     <div class="resume-container">
         <h2>My Resume!</h2>
@@ -69,7 +69,7 @@
             menu.classList.toggle("show");
             toggle.classList.toggle("active");
         }
-        
+
         let lastScrollTop = 0;
         const navbar = document.querySelector("nav");
 
