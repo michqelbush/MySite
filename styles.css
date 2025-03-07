@@ -42,6 +42,14 @@ nav ul li {
     display: inline-block;
 }
 
+li a::before {
+    content: attr(data-text);
+    font-weight: bold;
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
+
 li a {
     text-decoration: none;
     color: lightgray;
