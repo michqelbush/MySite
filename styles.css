@@ -73,7 +73,7 @@ li a:active {
 
 li a.active {
     color: rgb(56, 150, 250);
-    transform: scale(1.12);
+    transform: scale(1.1);
     font-weight: normal;
 }
 
