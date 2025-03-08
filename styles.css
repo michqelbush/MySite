@@ -263,6 +263,10 @@ li a.active:hover {
     margin-bottom: -2px;
 }
 
+.google-cert p {
+    margin-top: -2px;
+}
+
 /* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
     min-height: 50px;
