@@ -296,9 +296,6 @@ li a.active:hover {
         flex-basis: 100%; 
         max-width: 100%;
     }
-    .google-cert h3 {
-        margin-bottom: -2px;
-    }
     
     .google-cert p {
         margin-top: -1px;
