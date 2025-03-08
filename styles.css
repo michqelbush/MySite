@@ -386,9 +386,11 @@ li a.active:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers items vertically */
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers the entire grid */
+    text-align: center;
 }
 
 .skill-item {
@@ -425,6 +427,9 @@ li a.active:hover {
     color: lightgray;
 }
 
+.skill-item p, .skill-item .skill-level {
+    color: white; /* Ensures text is visible */
+}
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
