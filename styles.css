@@ -370,31 +370,58 @@ li a.active:hover {
     transform: translateY(-7px) rotate(-44deg);
 }
 
-.skills-container {
-    max-width: 900px;
-    margin: 50px auto;
+.skills-header {
     text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.skills-section {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.skill-box {
-    background: #1e1e2e;
-    padding: 20px;
+.skill-item {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 250px;
+    box-sizing: border-box;
+    background: rgb(51, 51, 51);
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-.skill-title {
-    font-size: 18px;
-    margin-bottom: 10px;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.progress-bar {
+    width: 100%;
+    background: #333;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background: #4caf50;
+    width: 0%;
+    transition: width 1s ease-in-out;
 }
 
 /* Mobile Navigation */
