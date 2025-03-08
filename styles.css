@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: rgb(40, 40, 40);
+    padding-top: calc(70px + env(safe-area-inset-top, 0)); /* Adjust for the fixed nav */
 }
 
 nav {
@@ -16,7 +17,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: env(safe-area-inset-top, 0) 20px 0 20px;
+    padding: env(safe-area-inset-top, 10px) 20px env(safe-area-inset-bottom, 10px) 20px; /* Top & Bottom safe area */
     z-index: 1000;
     transition: top 0.3s ease-in-out;
     box-sizing: border-box;
@@ -26,6 +27,7 @@ nav {
     nav {
         height: 80px;
         padding-top: env(safe-area-inset-top, 10px);
+        padding-bottom: env(safe-area-inset-bottom, 10px);
     }
 }
 
