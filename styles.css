@@ -370,6 +370,33 @@ li a.active:hover {
     transform: translateY(-7px) rotate(-44deg);
 }
 
+.skills-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-box {
+    background: #1e1e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 /* Mobile Navigation */
 @media (max-width: 768px) {
     /* Show the hamburger menu */
