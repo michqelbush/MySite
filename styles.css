@@ -259,14 +259,6 @@ li a.active:hover {
     width: 120px;
 }
 
-.google-cert h3 {
-    margin-bottom: -2px;
-}
-
-.google-cert p {
-    margin-top: -2px;
-}
-
 /* Ensures all certification titles take up the same amount of space */
 .cert-item h3 {
     min-height: 50px;
@@ -299,6 +291,13 @@ li a.active:hover {
     .cert-item {
         flex-basis: 100%; 
         max-width: 100%;
+    }
+    .google-cert h3 {
+        margin-bottom: -2px;
+    }
+    
+    .google-cert p {
+        margin-top: -2px;
     }
 }
 
