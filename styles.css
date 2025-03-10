@@ -373,7 +373,7 @@ li a.active:hover {
 .skills-header {
     text-align: center;
     color: white;
-    padding: 80px 20px 50px;
+    padding: 80px 20px; /* Removed unnecessary bottom padding */
 }
 
 .skills-section {
@@ -382,18 +382,7 @@ li a.active:hover {
     color: white;
 }
 
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers items vertically */
-    max-width: 900px;
-    margin: 0 auto; /* Centers the entire grid */
-    text-align: center;
-}
-
-.skills-container {
+.skills-grid, .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centers items horizontally */
@@ -436,15 +425,6 @@ li a.active:hover {
     color: lightgray;
 }
 
-.skill-item p, .skill-item .skill-level {
-    color: white; /* Ensures text is visible */
-}
-
-.technical-skills h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
