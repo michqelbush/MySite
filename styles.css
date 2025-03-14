@@ -373,7 +373,7 @@ li a.active:hover {
 .skills-header {
     text-align: center;
     color: white;
-    padding: 100px 20px; /* Removed unnecessary bottom padding */
+    padding: 90px 20px; /* Removed unnecessary bottom padding */
 }
 
 .skills-header h1 {
