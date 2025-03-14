@@ -380,6 +380,10 @@ li a.active:hover {
     margin-bottom: -4px;
 }
 
+.skills-header p {
+    color: lightgray;
+}
+
 .skills-section {
     text-align: center;
     padding: 30px 20px;
