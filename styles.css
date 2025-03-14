@@ -378,6 +378,7 @@ li a.active:hover {
 
 .skills-header h1 {
     margin-bottom: -3px;
+    padding-top: 5px;
 }
 
 .skills-section {
