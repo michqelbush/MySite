@@ -376,6 +376,10 @@ li a.active:hover {
     padding: 80px 20px; /* Removed unnecessary bottom padding */
 }
 
+.skills-header h1 {
+    margin-bottom: -3px;
+}
+
 .skills-section {
     text-align: center;
     padding: 30px 20px;
@@ -403,7 +407,6 @@ li a.active:hover {
     align-items: center;
     transition: transform 0.3s ease-in-out;
 }
-
 
 .skill-item img {
     width: 50px;
