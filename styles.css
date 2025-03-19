@@ -449,19 +449,20 @@ li a.active:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 5px; /* Reduce space between h2 and skill boxes */
+        gap: 0px; /* Remove unnecessary gap */
+        padding: 20px 10px; /* Adjust padding */
     }
 
     .skills-section h2 {
         text-align: center;
         width: 100%;
         padding-left: 0;
-        margin-bottom: 5px; /* Reduce extra margin below the h2 */
+        margin-bottom: 0px; /* Ensure no extra bottom margin */
     }
 
     .skills-container {
         justify-content: center;
-        gap: 10px; /* Reduce spacing between skill boxes */
+        gap: 5px; /* Reduce gap between items */
     }
 }
 
