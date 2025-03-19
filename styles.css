@@ -389,7 +389,6 @@ li a.active:hover {
     display: flex;
     align-items: flex-start; /* Aligns the h2 with the top of the skill boxes */
     justify-content: flex-start; /* Ensures everything stays aligned to the left */
-    gap: 40px; /* Space between h2 and skill boxes */
     padding: 30px 20px;
     color: white;
     max-width: 1000px;
