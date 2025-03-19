@@ -385,9 +385,21 @@ li a.active:hover {
 }
 
 .skills-section {
-    text-align: center;
+    display: flex;
+    align-items: center; /* Centers h2 vertically with skill boxes */
+    gap: 20px; /* Space between title and skill boxes */
     padding: 30px 20px;
     color: white;
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the section */
+}
+
+.skills-section h2 {
+    flex-shrink: 0; /* Prevents resizing */
+    font-size: 26px;
+    min-width: 200px; /* Consistent width for alignment */
+    text-align: left;
+    margin: 0; /* Removes extra margin */
 }
 
 .skills-grid, .skills-container {
@@ -395,8 +407,7 @@ li a.active:hover {
     flex-wrap: wrap;
     justify-content: center; /* Centers items horizontally */
     gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    flex-grow: 1; /* Ensures it takes remaining space */
 }
 
 .skill-item {
