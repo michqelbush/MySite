@@ -449,7 +449,6 @@ li a.active:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 10px; /* Remove unnecessary gap */
         padding: 10px 10px; /* Adjust padding */
     }
 
@@ -457,7 +456,7 @@ li a.active:hover {
         text-align: center;
         width: 100%;
         padding-left: 0;
-        margin-bottom: 10px; /* Ensure no extra bottom margin */
+        margin-bottom: -10px; /* Ensure no extra bottom margin */
     }
 
     .skills-container {
