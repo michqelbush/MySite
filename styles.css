@@ -460,8 +460,8 @@ li a.active:hover {
     }
 
     .skills-container {
+        margin-top: -20px;
         justify-content: center;
-        gap: 10px; /* Reduce gap between items */
     }
 }
 
