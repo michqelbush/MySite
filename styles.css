@@ -373,7 +373,7 @@ li a.active:hover {
 .skills-header {
     text-align: center;
     color: white;
-    padding: 120px 20px 40px; /* Add extra top padding to clear the navbar */
+    padding: 80px 20px 40px; /* Add extra top padding to clear the navbar */
 }
 
 .skills-header h1 {
