@@ -456,7 +456,7 @@ li a.active:hover {
         text-align: center;
         width: 100%;
         padding-left: 0;
-        margin-bottom: -10px; /* Ensure no extra bottom margin */
+        margin-bottom: -30px; /* Ensure no extra bottom margin */
     }
 
     .skills-container {
