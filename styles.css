@@ -387,29 +387,31 @@ li a.active:hover {
 /* Updated Skills Section Styling */
 .skills-section {
     display: flex;
-    align-items: flex-start; /* Aligns heading and skill boxes at the top */
-    gap: 40px; /* Space between title and skill boxes */
+    align-items: flex-start; /* Aligns the h2 with the top of the skill boxes */
+    justify-content: flex-start; /* Ensures everything stays aligned to the left */
+    gap: 40px; /* Space between h2 and skill boxes */
     padding: 30px 20px;
     color: white;
     max-width: 1000px;
     margin: 0 auto; /* Centers the section */
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 .skills-section h2 {
-    flex: 0 0 200px; /* Fixed width for the heading */
+    flex: 0 0 200px; /* Ensures h2 has a fixed width */
     font-size: 26px;
     text-align: left;
-    margin: 0; /* Removes extra margin */
+    margin: 0;
     padding-left: 20px; /* Space from the left side */
+    white-space: nowrap; /* Prevents title from breaking into two lines */
 }
 
 .skills-container {
-    flex-grow: 1; /* Allows it to take remaining space */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start; /* Aligns boxes to the left */
+    flex-grow: 1;
+    justify-content: flex-start; /* Keeps the skill boxes aligned to the left */
+    align-items: flex-start; /* Ensures items align with the h2 */
 }
 
 .skill-item {
@@ -442,6 +444,24 @@ li a.active:hover {
     color: lightgray;
 }
 
+@media (max-width: 768px) {
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-section h2 {
+        text-align: center;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+}
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
