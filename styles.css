@@ -458,11 +458,11 @@ li a.active:hover {
     .skills-section h2 {
         width: 100%;
         text-align: center;
-        margin-bottom: -30px;
+        margin-bottom: -100px;
     }
 
     .skills-container {
-        margin-top: -20px;
+        margin-top: -50px;
         justify-content: center;
     }
 }
