@@ -370,55 +370,41 @@ li a.active:hover {
     transform: translateY(-7px) rotate(-44deg);
 }
 
-.skills-header {
-    text-align: center;
-    color: white;
-    padding: 90px 20px 10px; /* Add extra top padding to clear the navbar */
-}
-
-.skills-header h1 {
-    margin-bottom: -5px;
-}
-
-.skills-header p {
-    color: lightgray;
-}
-
-/* Updated Skills Section Styling */
 .skills-section {
     display: flex;
-    align-items: flex-start; /* Aligns the h2 with the top of the skill boxes */
-    justify-content: flex-start; /* Ensures everything stays aligned to the left */
+    align-items: center; /* Vertically center h2 with the grid */
+    justify-content: flex-start;
+    gap: 40px;
     padding: 30px 20px;
     color: white;
     max-width: 1000px;
-    margin: 0 auto; /* Centers the section */
+    margin: 0 auto;
 }
 
 .skills-section h2 {
-    flex: 0 0 200px; /* Ensures h2 has a fixed width */
+    flex: 0 0 200px; /* Fixed width for the title column */
     font-size: 26px;
     text-align: left;
     margin: 0;
-    padding: 0 0 0 20px; /* Space from the left side */
+    padding: 0;
     line-height: 1.2;
-    white-space: nowrap; /* Prevents title from breaking into two lines */
+    white-space: nowrap; /* Prevents breaking into multiple lines */
 }
 
 .skills-container {
+    flex: 1; /* Take up remaining space */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    flex-grow: 1;
-    justify-content: flex-start; /* Keeps the skill boxes aligned to the left */
-    align-items: flex-start; /* Ensures items align with the h2 */
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .skill-item {
     background: rgb(51, 51, 51);
     padding: 20px;
     border-radius: 10px;
-    width: 150px; /* Keeps all items uniform */
+    width: 150px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -444,19 +430,19 @@ li a.active:hover {
     color: lightgray;
 }
 
+/* Responsive for smaller screens */
 @media (max-width: 768px) {
     .skills-section {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 10px 10px; /* Adjust padding */
+        padding: 10px 10px;
     }
 
     .skills-section h2 {
-        text-align: center;
         width: 100%;
-        padding-left: 0;
-        margin-bottom: -30px; /* Ensure no extra bottom margin */
+        text-align: center;
+        margin-bottom: -30px;
     }
 
     .skills-container {
