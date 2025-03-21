@@ -471,11 +471,20 @@ li a.active:hover {
 }
 
 @media (max-width: 600px) {
+    .skills-container {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
     .skill-item {
-        flex-basis: 100%;
-        max-width: 100%;
+        flex-basis: 100%; 
+        max-width: 90%; /* Adjust for even spacing */
+        margin: 0 auto; /* Center the boxes */
     }
 }
+
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
