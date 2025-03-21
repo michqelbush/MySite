@@ -454,33 +454,26 @@ li a.active:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 20px; /* Ensure even padding on both sides */
-        width: 100%;
+        padding: 10px 10px;
     }
 
     .skills-section h2 {
         width: 100%;
         text-align: center;
-        margin: 0 0 20px;
+        margin-top: 15px;
+        margin-bottom: -113px;
     }
 
     .skills-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: -80px;
+        justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
-    .skills-section {
-        padding: 0 15px; /* Keep padding equal on both sides */
-    }
-
     .skill-item {
         flex-basis: 100%;
-        width: calc(100% - 30px); /* Prevents touching the screen edges */
-        margin: 10px auto; /* Ensures perfect centering */
+        max-width: 100%;
     }
 }
 
