@@ -393,7 +393,6 @@ li a.active:hover {
     color: white;
     max-width: 1000px;
     margin-right: auto;
-
 }
 
 .skills-section h2 {
@@ -408,18 +407,16 @@ li a.active:hover {
 
 .skills-container {
     flex: 1; /* Take up remaining space */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 per row by default */
     gap: 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
 }
 
 .skill-item {
     background: rgb(51, 51, 51);
     padding: 20px;
     border-radius: 10px;
-    width: 150px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -428,12 +425,13 @@ li a.active:hover {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Ensure images stay proportional */
 .skill-item img {
     max-height: 50px;
-    width: auto;  
-    height: auto;         
+    width: auto;
+    height: auto;
     margin-bottom: 10px;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 .skill-item p {
@@ -447,7 +445,14 @@ li a.active:hover {
     color: lightgray;
 }
 
-/* Responsive for smaller screens */
+/* When the screen is smaller but still wide enough for 2 per row */
+@media (max-width: 1100px) { 
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* Skip 3 per row and go directly to 2 */
+    }
+}
+
+/* When the screen is small enough for text to go on top */
 @media (max-width: 768px) {
     .skills-section {
         flex-direction: column;
@@ -464,15 +469,15 @@ li a.active:hover {
     }
 
     .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 per row */
         margin-top: -80px;
         justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
-    .skill-item {
-        flex-basis: 100%;
-        max-width: 100%;
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr); /* Switch to 1 per row */
     }
 }
 
