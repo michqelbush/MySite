@@ -471,8 +471,13 @@ li a.active:hover {
 }
 
 @media (max-width: 600px) {
+    .skills-section {
+        padding-left: 0 !important; 
+        padding-right: 0 !important;
+    }
+
     .skills-container {
-        padding: 0;
+        width: 100%;
     }
 
     .skill-item {
@@ -480,6 +485,7 @@ li a.active:hover {
         max-width: 100%;
     }
 }
+
 
 
 /* Mobile Navigation */
