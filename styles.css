@@ -406,8 +406,9 @@ li a.active:hover {
 }
 
 .skills-container {
+    flex: 1; /* Take up remaining space */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 per row by default */
     gap: 20px;
     width: 100%;
 }
@@ -447,14 +448,22 @@ li a.active:hover {
 /* When the screen is smaller but still wide enough for 2 per row */
 @media (max-width: 1100px) { 
     .skills-container {
-        grid-template-columns: repeat(2, 1fr); /* Switch to 2 per row */
+        grid-template-columns: repeat(2, 1fr); /* Skip 3 per row and go directly to 2 */
     }
+}
 
-    /* Special case: When there are exactly 3 items */
-    .skill-item:nth-child(3) {
-        grid-column: span 2; /* Make the third item span across both columns */
-        justify-self: center; /* Center it */
-    }
+/* Special case: If a row has exactly 3 items, center the 3rd */
+.skills-container:has(.skill-item:nth-child(3):last-child) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-container:has(.skill-item:nth-child(3):last-child) .skill-item:nth-child(3) {
+    width: 50%; /* Center it under the first two */
+    text-align: center;
+    justify-self: center;
 }
 
 /* When the screen is small enough for text to go on top */
