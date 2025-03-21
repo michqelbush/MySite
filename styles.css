@@ -470,6 +470,13 @@ li a.active:hover {
     }
 }
 
+@media (max-width: 600px) {
+    .skill-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
 /* Mobile Navigation */
 @media (max-width: 768px) {
     /* Show the hamburger menu */
