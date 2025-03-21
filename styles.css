@@ -471,6 +471,10 @@ li a.active:hover {
 }
 
 @media (max-width: 600px) {
+    .skills-container {
+        padding: 0;
+    }
+
     .skill-item {
         flex-basis: 100%;
         max-width: 100%;
