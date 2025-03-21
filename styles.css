@@ -392,7 +392,6 @@ li a.active:hover {
     padding: 30px 20px;
     color: white;
     max-width: 1000px;
-    margin-left: 20px; /* or whatever feels right */
     margin-right: auto;
 
 }
