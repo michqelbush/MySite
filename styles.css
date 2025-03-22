@@ -452,17 +452,14 @@ li a.active:hover {
     }
 }
 
-/* Special case: If a row has exactly 3 items, center the 3rd */
-.skills-container:has(.skill-item:nth-child(3):last-child) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.skills-container.skill-row-three {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.skills-container:has(.skill-item:nth-child(3):last-child) .skill-item:nth-child(3) {
-    width: 50%; /* Center it under the first two */
-    text-align: center;
+.skills-container.skill-row-three .skill-item:nth-child(3) {
+    grid-column: 1 / -1;
     justify-self: center;
 }
 
