@@ -459,8 +459,9 @@ li a.active:hover {
 }
 
 .skills-container.skill-row-three .skill-item:nth-child(3) {
-    grid-column: 1 / -1;
+    grid-column: span 1; /* Make the 3rd item take up 1 column */
     justify-self: center;
+    width: 100%;
 }
 
 /* When the screen is small enough for text to go on top */
