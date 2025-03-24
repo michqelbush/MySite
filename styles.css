@@ -454,15 +454,12 @@ li a.active:hover {
 
 .skills-container.skill-row-three {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 20px;
 }
 
 .skills-container.skill-row-three .skill-item:nth-child(3) {
-    grid-column: 1 / 3;          /* Span the full row */
-    justify-self: center;       /* Center the box horizontally */
-    width: 100%;                /* Keep it same width as others */
-    max-width: 500px;           /* Optional: constrain size if needed */
+    grid-column: 2 / 3; /* Place in the second column */
 }
 
 /* When the screen is small enough for text to go on top */
