@@ -459,9 +459,7 @@ li a.active:hover {
 }
 
 .skills-container.skill-row-three .skill-item:nth-child(3) {
-    grid-column: 1 / span 2;       /* Span both columns (full row) */
-    display: flex;
-    justify-content: center;       /* Center the content inside */
+    grid-column: 2 / 3; /* Puts the third item in the second column */
 }
 
 /* When the screen is small enough for text to go on top */
