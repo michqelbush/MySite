@@ -382,7 +382,7 @@ li a.active:hover {
 
 .skills-header p {
     color: lightgray;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 }
 
 .skills-section {
