@@ -475,11 +475,11 @@ li a.active:hover {
     }
     /* Override the centered third-item layout for mobile */
     .skills-container.skill-row-three .skill-item:nth-child(3) {
-        grid-column: auto;        /* remove custom column */
-        margin-left: 0;           /* remove centering offset */
-        width: 100%;              /* make it full width like others */
-        max-width: 100%;
-    }
+        grid-column: auto !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }    
 }
 
 /* Mobile Navigation */
