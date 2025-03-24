@@ -461,10 +461,9 @@ li a.active:hover {
 /* Third item on its own row, left column */
 .skills-container.skill-row-three .skill-item:nth-child(3) {
     grid-column: 1;                  /* Left column */
-    margin-left: auto;              /* Push it to the right */
-    margin-right: auto;             /* Center it visually */
     width: 100%;                    /* Match width of other grid items */
     max-width: 100%;
+    margin-left: calc(50% - 50vw); /* Center the item */
 }
 
 /* When the screen is small enough for text to go on top */
