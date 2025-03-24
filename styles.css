@@ -463,7 +463,7 @@ li a.active:hover {
     grid-column: 1;                  /* Left column */
     width: 100%;                    /* Match width of other grid items */
     max-width: 100%;
-    margin-left: calc(50% + 10px); /* Center the item */
+    margin-left: calc(50% + 8px); /* Center the item */
 }
 
 /* When the screen is small enough for text to go on top */
