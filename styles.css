@@ -473,6 +473,11 @@ li a.active:hover {
     .skills-container {
         grid-template-columns: repeat(1, 1fr); /* Switch to 1 per row */
     }
+    /* Override the centered third-item layout for mobile */
+    .skills-container.skill-row-three .skill-item:nth-child(3) {
+        grid-column: auto;
+        margin-left: 0;
+    }
 }
 
 /* Mobile Navigation */
