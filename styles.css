@@ -473,16 +473,16 @@ li a.active:hover {
     .skills-container {
       grid-template-columns: repeat(1, 1fr);
     }
-    
-    .skills-container.skill-row-three .skill-item:nth-child(3) {
-      grid-column: auto !important;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      justify-self: stretch !important;
+  
+    .skills-container.skill-row-three {
+      grid-template-columns: 1fr; /* force single column */
     }
-  }
+  
+    .skills-container.skill-row-three .skill-item:nth-child(3) {
+      grid-column: auto;
+      justify-self: stretch;
+    }
+  }  
   
 /* Mobile Navigation */
 @media (max-width: 768px) {
