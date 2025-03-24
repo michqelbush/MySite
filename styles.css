@@ -479,9 +479,11 @@ li a.active:hover {
     }
   
     .skills-container.skill-row-three .skill-item:nth-child(3) {
-      grid-column: auto;
-      justify-self: stretch;
-    }
+        grid-column: auto;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+      }
   }  
   
 /* Mobile Navigation */
