@@ -477,6 +477,8 @@ li a.active:hover {
     .skills-container.skill-row-three .skill-item:nth-child(3) {
         grid-column: auto;
         margin-left: 0;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
