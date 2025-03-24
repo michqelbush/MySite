@@ -465,6 +465,10 @@ li a.active:hover {
     margin-left: calc(50% - 10px); /* Center the item */
 }
 
+.skills-section:last-of-type {
+    margin-bottom: 80px;
+}
+
 @media (max-width: 600px) {
     .skills-container {
         grid-template-columns: repeat(1, 1fr); /* Switch to 1 per row */
