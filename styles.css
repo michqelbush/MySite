@@ -385,6 +385,13 @@ li a.active:hover {
     margin-bottom: -10px;
 }
 
+.skills-header h1,
+.skills-header p {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -403,7 +410,7 @@ li a.active:hover {
     width: 100%;
     animation: fadeUp 0.6s ease-out forwards;
     opacity: 0;
-
+    animation-delay: 0.2s;
 }
 
 .skills-container {
