@@ -406,11 +406,14 @@ li a.active:hover {
 }
 
 .skills-container {
-    flex: 1; /* Take up remaining space */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 per row by default */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    max-width: 800px;     /* LIMITS grid width to prevent box growth */
+    margin: 0 auto;        /* CENTER the grid horizontally */
     width: 100%;
+    padding: 0 20px;       /* Optional: add small side padding on mobile */
 }
 
 .skill-item {
@@ -423,6 +426,9 @@ li a.active:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease-in-out;
+    flex: 0 0 180px;
+    max-width: 180px;
+    width: 100%;
 }
 
 /* Ensure images stay proportional */
