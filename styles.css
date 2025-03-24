@@ -471,17 +471,19 @@ li a.active:hover {
 
 @media (max-width: 600px) {
     .skills-container {
-        grid-template-columns: repeat(1, 1fr); /* Switch to 1 per row */
+      grid-template-columns: repeat(1, 1fr);
     }
-    /* Override the centered third-item layout for mobile */
+    
     .skills-container.skill-row-three .skill-item:nth-child(3) {
-        grid-column: auto !important;
-        margin-left: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-      }    
-}
-
+      grid-column: auto !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      justify-self: stretch !important;
+    }
+  }
+  
 /* Mobile Navigation */
 @media (max-width: 768px) {
     /* Show the hamburger menu */
