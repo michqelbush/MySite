@@ -483,8 +483,10 @@ li a.active:hover {
         margin: 0 auto;
         width: 100%;
         max-width: 100%;
-      }
-  }  
+        justify-self: center;
+        align-self: center;
+    }      
+}  
   
 /* Mobile Navigation */
 @media (max-width: 768px) {
