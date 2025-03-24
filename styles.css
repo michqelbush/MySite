@@ -458,18 +458,13 @@ li a.active:hover {
     gap: 20px;
 }
 
-.skills-container.skill-row-three .skill-item:nth-child(1) {
-    grid-column: 1;
-}
-
-.skills-container.skill-row-three .skill-item:nth-child(2) {
-    grid-column: 2;
-}
-
-/* MAGIC RIGHT HERE */
+/* Third item on its own row, left column */
 .skills-container.skill-row-three .skill-item:nth-child(3) {
-    grid-column: 1 / 2;              /* Stay in one column */
-    justify-self: center;            /* Center the item inside that column */
+    grid-column: 1;                  /* Left column */
+    margin-left: auto;              /* Push it to the right */
+    margin-right: auto;             /* Center it visually */
+    width: 100%;                    /* Match width of other grid items */
+    max-width: 100%;
 }
 
 /* When the screen is small enough for text to go on top */
