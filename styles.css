@@ -225,8 +225,8 @@ li a.active:hover {
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    transform: scaleX(0.5);
-    animation: growIn .4s ease-out forwards;
+    animation: fadeUp 0.3s ease-out forwards;
+    animation-fill-mode: forwards;
 }
 
 /* Image container for flexible sizing */
@@ -302,17 +302,6 @@ li a.active:hover {
     }
 }
 
-@keyframes growIn {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 .cert-item:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -330,7 +319,7 @@ li a.active:hover {
 }
 
 .cert-item:nth-child(5) {
-    animation-delay: .8s;
+    animation-delay: 1s;
 }
 
 /* Hamburger Menu */
