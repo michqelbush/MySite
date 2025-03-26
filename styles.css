@@ -206,7 +206,7 @@ li a.active:hover {
     margin-bottom: 50px;
     opacity: 0;
     animation: fadeDown 0.6s ease-out forwards;
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .cert-list {
@@ -380,7 +380,7 @@ li a.active:hover {
   .skills-header p {
     opacity: 0;
     animation: fadeDown 0.6s ease-out forwards;
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
   }
 
 .skills-section {
