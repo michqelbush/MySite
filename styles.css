@@ -586,7 +586,7 @@ li a.active:hover {
 
 @media (max-width: 600px) {
     .projects-container {
-      padding: 0 10px;
+      padding: 0 0px;
     }
   
     .project-box {
