@@ -584,6 +584,16 @@ li a.active:hover {
     cursor: default;
 }
 
+@media (max-width: 600px) {
+    .projects-container {
+      padding: 0 10px;
+    }
+  
+    .project-box {
+      padding: 40px 20px;
+    }
+  }  
+
 @keyframes fadeDown {
     from {
         opacity: 0;
