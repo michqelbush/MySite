@@ -497,6 +497,73 @@ li a.active:hover {
 .skill-item:nth-child(2) { animation-delay: 0.4s; }
 .skill-item:nth-child(3) { animation-delay: 0.6s; }
 .skill-item:nth-child(4) { animation-delay: 0.8s; }
+
+.projects-container {
+    padding: 100px 20px 40px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.projects-container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: rgb(51, 51, 51);
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-card h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-button {
+    padding: 10px 20px;
+    background-color: #3a85ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.project-button:hover {
+    background-color: #1c6db9;
+}
+
+.project-button.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: default;
+}
   
 /* Mobile Navigation */
 @media (max-width: 768px) {
