@@ -194,13 +194,13 @@ li a.active:hover {
 
 .certs-container h1 {
     font-size: 33px;
-    margin-bottom: 0px;
+    margin-bottom: -5px;
     margin-top: 50px;
 }
 
 .certs-container p {
     color: lightgray;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .cert-list {
