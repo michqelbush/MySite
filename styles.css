@@ -513,6 +513,8 @@ li a.active:hover {
     font-size: 33px;
     margin-bottom: 45px;
     margin-top: 30px;
+    animation: fadeDown 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 .projects-container {
@@ -580,6 +582,17 @@ li a.active:hover {
     pointer-events: none;
     opacity: 0.6;
     cursor: default;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
   
 /* Mobile Navigation */
