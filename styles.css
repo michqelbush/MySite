@@ -537,6 +537,9 @@ li a.active:hover {
     flex: 1 1 calc(50% - 40px);
     max-width: 500px;
     box-sizing: border-box;
+    flex: 1 1 500px;
+    max-width: 520px;
+    height: 280px;  
 }
 
 .project-box:hover {
