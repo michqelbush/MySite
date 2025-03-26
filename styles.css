@@ -550,7 +550,7 @@ li a.active:hover {
 .project-box h3 {
     font-size: 26px;
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: -4px;
 }
 
 .project-box p {
