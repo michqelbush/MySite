@@ -382,6 +382,10 @@ li a.active:hover {
     padding: 40px 20px 0;
     color: white;
     gap: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 .skills-section h2 {
