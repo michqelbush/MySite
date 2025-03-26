@@ -309,10 +309,6 @@ li a.active:hover {
     }
 }
 
-.cert-item:nth-child(5) {
-    animation-delay: 1s;
-}
-
 /* Hamburger Menu */
 .menu-toggle {
     display: none; /* Hide on large screens */
