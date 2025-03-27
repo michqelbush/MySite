@@ -362,17 +362,12 @@ li a.active:hover {
     margin-bottom: -10px;
 }
 
-.skills-header h1 {
+.skills-header h1,
+.skills-header p {
     opacity: 0;
     animation: fadeDown 0.8s ease-out forwards;
-    animation-delay: .01s;
-  }
-  
-  .skills-header p {
-    opacity: 0;
-    animation: fadeDown 0.6s ease-out forwards;
-    animation-delay: 0.01s;
-  }
+    animation-delay: 0.1s;
+}
 
 .skills-section {
     display: flex;
