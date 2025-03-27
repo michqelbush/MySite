@@ -285,9 +285,8 @@ li a.active:hover {
 .cert-item p {
     font-size: 14px;
     color: lightgray;
-    opacity: 0;
-    animation: fadeUp 0.8s ease-out forwards;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: none;
 }
 
 .in-progress {
