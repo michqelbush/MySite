@@ -205,8 +205,8 @@ li a.active:hover {
     color: lightgray;
     margin-bottom: 50px;
     opacity: 0;
-    animation: fadeDown 0.6s ease-out forwards;
-    animation-delay: 0.1s;
+    animation: fadeDown 0.8s ease-out forwards;
+    animation-delay: 0.01s;
 }
 
 .cert-list {
