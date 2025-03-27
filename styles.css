@@ -196,9 +196,9 @@ li a.active:hover {
     font-size: 33px;
     margin-bottom: -5px;
     margin-top: 50px;
+    animation: fadeDown 0.8s ease-out forwards;
     opacity: 0;
-    animation: fadeDown 0.6s ease-out forwards;
-    animation-delay: 0.1s;
+    animation-delay: .01s;
 }
 
 .certs-container > p {
