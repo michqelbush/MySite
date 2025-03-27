@@ -286,7 +286,7 @@ li a.active:hover {
     font-size: 14px;
     color: lightgray;
     opacity: 0;
-    transform: translareY(30px);
+    animation: fadeUp 0.8s ease-out forwards;
 }
 
 .in-progress {
