@@ -287,7 +287,6 @@ li a.active:hover {
     color: lightgray;
     opacity: 0;
     animation: fadeUp 0.6s ease-out forwards;
-    animation-delay: 0.1s;
     transform: translareY(30px);
 }
 
