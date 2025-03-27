@@ -192,6 +192,17 @@ li a.active:hover {
     }
 }
 
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .certs-container h1 {
     font-size: 33px;
     margin-bottom: -5px;
