@@ -176,9 +176,6 @@ li a.active:hover {
     text-align: center;
     padding: 80px 20px;
     color: white;
-    opacity: 0; /* Start hidden */
-    transform: translateY(30px); /* Start slightly lower */
-    animation: fadeUp .8s ease-out forwards; /* Animation runs once */
 }
 
 @keyframes fadeUp {
@@ -227,6 +224,10 @@ li a.active:hover {
     justify-content: center;
     max-width: 860px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 .cert-item {
