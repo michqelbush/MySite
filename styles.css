@@ -12,7 +12,7 @@ nav {
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: rgb(132, 132, 132);
+    background-color: #ffffff;    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ li a::before {
 
 li a {
     text-decoration: none;
-    color: lightgray;
+    color: #555555;
     padding: 10px 15px;
     display: inline-block;
     border: none;
@@ -61,7 +61,7 @@ li a {
 }
 
 li a:hover {
-    color: white;
+    color: #222222;
     background-image: linear-gradient(15deg, #1c6db9, rgb(29, 29, 201));
     background-size: 200% auto;
     box-shadow: 0px 5px 10px #1c6db9;
@@ -82,7 +82,7 @@ li a:not(.active) {
 }
 
 li a.active:hover {
-    color: white;
+    color: #222222;
     transform: scale(1.1);
 }
 
@@ -98,7 +98,7 @@ li a.active:hover {
     margin: 0;
     padding: 20px;  
     background: rgb(40, 40, 40);
-    color: white;
+    color: #222222;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +138,7 @@ li a.active:hover {
     margin: 80px auto 20px;
     padding: 100px;
     text-align: center;
-    color: white;
+    color: #222222;
     opacity: 0; /* Start hidden */
     transform: translateY(30px); /* Start slightly lower */
     animation: fadeUp 1s ease-out forwards; /* Animation runs once */
@@ -175,7 +175,7 @@ li a.active:hover {
 .certs-container {
     text-align: center;
     padding: 80px 20px;
-    color: white;
+    color: #222222;
 }
 
 @keyframes fadeUp {
@@ -210,7 +210,7 @@ li a.active:hover {
 }
 
 .certs-container > p {
-    color: lightgray;
+    color: #555555;
     margin-bottom: 50px;
     opacity: 0;
     animation: fadeDown 0.8s ease-out forwards;
@@ -234,7 +234,7 @@ li a.active:hover {
     flex: 1 1 calc(33.33% - 20px); /* 33% width with 20px spacing */
     max-width: 250px;
     box-sizing: border-box;
-    background: rgb(57, 57, 57);
+    background: #f0f2f5;
     padding: 15px;
     border-radius: 8px;
     width: 250px;
@@ -296,7 +296,7 @@ li a.active:hover {
 /* Reduces space between title and text */
 .cert-item p {
     font-size: 14px;
-    color: lightgray;
+    color: #555555;
     opacity: 1;
     transform: none;
 }
@@ -340,7 +340,7 @@ li a.active:hover {
 .menu-toggle div {
     width: 15px;
     height: 2px;
-    background-color: white;
+    background-color: #222222;
     margin: 2px 0;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -362,7 +362,7 @@ li a.active:hover {
 
 .skills-header {
     text-align: center;
-    color: white;
+    color: #222222;
     padding: 90px 20px 10px; /* Add extra top padding to clear the navbar */
 }
 
@@ -372,7 +372,7 @@ li a.active:hover {
 }
 
 .skills-header p {
-    color: lightgray;
+    color: #555555;
     margin-bottom: -10px;
 }
 
@@ -389,7 +389,7 @@ li a.active:hover {
     align-items: center;
     text-align: center;
     padding: 40px 20px 0;
-    color: white;
+    color: #222222;
     gap: 20px;
     opacity: 0;
     animation: fadeUp 0.6s ease-out forwards;
@@ -414,7 +414,7 @@ li a.active:hover {
 
 
 .skill-item {
-    background: rgb(57, 57, 57);
+    background: #f0f2f5;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -435,13 +435,13 @@ li a.active:hover {
 
 .skill-item p {
     font-weight: bold;
-    color: white;
+    color: #222222;
     margin: 5px 0;
 }
 
 .skill-level {
     font-size: 14px;
-    color: lightgray;
+    color: #555555;
 }
 
 .skill-group {
@@ -511,7 +511,7 @@ li a.active:hover {
 .projects-section {
     text-align: center;
     padding: 100px 20px 60px;
-    color: white;
+    color: #222222;
 }
 
 .projects-section h1 {
@@ -534,7 +534,7 @@ li a.active:hover {
 }
 
 .project-box {
-    background: rgb(57, 57, 57);
+    background: #f0f2f5;
     border-radius: 8px;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
@@ -561,7 +561,7 @@ li a.active:hover {
 
 .project-box h3 {
     font-size: 26px;
-    color: white;
+    color: #222222;
     margin-bottom: -4px;
 }
 
@@ -575,7 +575,7 @@ li a.active:hover {
 .project-button {
     padding: 12px 24px;
     background-color: #3a85ff;
-    color: white;
+    color: #222222;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -627,7 +627,7 @@ li a.active:hover {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: rgb(51, 51, 51);
+        background-color: #dfe3e8;
         width: 100%;
         text-align: center;
         opacity: 0;
