@@ -61,7 +61,7 @@ li a {
 }
 
 li a:hover {
-    color: #cbd5e1;
+    color: #ffffff;
     background-image: linear-gradient(15deg, #0ea5e9, #2563eb);
     background-size: 200% auto;
     box-shadow: 0px 5px 10px #1c6db9;
