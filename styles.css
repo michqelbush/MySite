@@ -82,7 +82,7 @@ li a:not(.active) {
 }
 
 li a.active:hover {
-    color: #222222;
+    color: #ffffff;
     transform: scale(1.1);
 }
 
