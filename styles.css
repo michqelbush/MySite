@@ -204,6 +204,7 @@ li a.active:hover {
 .cert-item,
 .project-box {
     background: #e7ebf2;
+    border-left: 6px solid #1c6db9;
 }
 
 .certs-container h1 {
